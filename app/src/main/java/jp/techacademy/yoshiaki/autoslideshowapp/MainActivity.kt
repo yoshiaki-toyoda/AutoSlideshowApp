@@ -30,7 +30,7 @@ open class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        permissions(count)
+        permissions(0)
         start_button.text="再生" //スライドショー初回文字設定
 
         //戻るボタン押下
