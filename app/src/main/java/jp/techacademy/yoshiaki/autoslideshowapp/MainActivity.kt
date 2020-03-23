@@ -108,7 +108,7 @@ open class MainActivity : AppCompatActivity() {
             when (requestCode) {
                 PERMISSIONS_REQUEST_CODE ->
                     if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                        getContentsInfo(count)
+                        getContentsInfo(0)
                     }
             }
     }
@@ -117,7 +117,7 @@ open class MainActivity : AppCompatActivity() {
     private fun getContentsInfo(count:Int) {
         // 画像の情報を取得する
         this.count=count//辞書呼び出しキー用変数
-        var count2:Int=0//辞書格納用キー変数
+        var count2: Int =0//辞書格納用キー変数
 
 
         val resolver = contentResolver
